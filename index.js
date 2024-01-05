@@ -52,3 +52,15 @@ $(document).ready(function() {
     $(this).fadeIn(3000);
   });
 });
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").classList.add("hide-navbar");
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("main").classList.remove("hide-navbar");
+}
