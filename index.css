@@ -342,8 +342,14 @@ body:not(.user-is-tabbing) a:focus {
     padding: var(--gutter-normal) 0;
 }
 
+.nav .logo {
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
 .nav__items {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
 }
 
@@ -428,6 +434,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .header__text {
+    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -482,6 +489,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__text {
+    display: none;
     flex: 0 0 30%;
 }
 

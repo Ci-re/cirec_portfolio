@@ -41,3 +41,14 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+
+$(document).ready(function() {
+  // Fade In and Slide Down the divs
+  $(".header__text").each(function(index) {
+    $(this).delay(400 * index).fadeIn(1000);
+  })
+  $(".work__text").each(function(index) {
+    $(this).fadeIn(3000);
+  });
+});
