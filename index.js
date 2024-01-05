@@ -64,3 +64,23 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.getElementById("main").classList.remove("hide-navbar");
 }
+
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+let nav = document.querySelector(".nav");
+let responsive = document.querySelector(".responsive")
+
+// Get the offset position of the navbar
+let sticky = nav.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    nav.classList.add("sticky")
+    responsive.classList.add("sticky-background")
+  } else {
+    nav.classList.remove("sticky");
+    responsive.classList.remove("sticky-background")
+  }
+}
